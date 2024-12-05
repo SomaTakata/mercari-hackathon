@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 export default function PersonalityTest() {
   return (
-    <div className="h-full justify-between flex flex-col items-center px-5 py-12 pt-56 gap-6">
+    <div className="h-screen bg-slate-100 justify-between flex flex-col items-center px-5 py-12 pt-56 gap-6">
       <div className="flex flex-col gap-6">
         <div className="text-slate-700 text-center flex flex-col gap-2 mb-12">
           <p className="text-lg">あなたにおすすめの求人をご案内</p>
-          <h1 className="text-4xl font-bold">ハロ活タイプ診断</h1>
+          <p className="text-4xl font-bold">ハロ活タイプ診断</p>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-6">
