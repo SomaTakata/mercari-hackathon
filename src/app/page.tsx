@@ -1,108 +1,48 @@
-import { X } from "lucide-react";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
-export default function PersonalityQuiz() {
+export default function PersonalityTest() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-500 to-slate-100">
-      {/* Main content */}
-      <div className="px-6 pt-32 pb-8 space-y-24">
-        <div>
-          <div className="text-center text-white space-y-4">
-            <p className="text-lg">あなたにおすすめの求人をご案内</p>
-            <h1 className="text-4xl font-bold">ハロ活タイプ診断</h1>
-          </div>
-
-          {/* Avatars */}
-          <div className="relative h-[400px] mt-16 ">
-            {/* Top avatar - Woman in red */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2">
-              <div className="w-20 h-20 rounded-full bg-white p-1">
-                <div className="w-full h-full rounded-full bg-red-400 flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-16 h-16 text-white">
-                    <path
-                      fill="currentColor"
-                      d="M12 4a4 4 0 0 1 4 4v2h.5a2.5 2.5 0 0 1 2.5 2.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 19.5v-7A2.5 2.5 0 0 1 7.5 10H8V8a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v2h4V8a2 2 0 0 0-2-2z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Top right avatar - Man in blue */}
-            <div className="absolute top-[20%] right-[10%]">
-              <div className="w-20 h-20 rounded-full bg-white p-1">
-                <div className="w-full h-full rounded-full bg-blue-500 flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-16 h-16 text-white">
-                    <path
-                      fill="currentColor"
-                      d="M12 4a4 4 0 0 1 4 4v2h.5a2.5 2.5 0 0 1 2.5 2.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 19.5v-7A2.5 2.5 0 0 1 7.5 10H8V8a4 4 0 0 1 4-4z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Right avatar - Medical green */}
-            <div className="absolute bottom-[30%] right-[10%]">
-              <div className="w-20 h-20 rounded-full bg-white p-1">
-                <div className="w-full h-full rounded-full bg-emerald-500 flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-16 h-16 text-white">
-                    <path
-                      fill="currentColor"
-                      d="M12 4a4 4 0 0 1 4 4v2h.5a2.5 2.5 0 0 1 2.5 2.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 19.5v-7A2.5 2.5 0 0 1 7.5 10H8V8a4 4 0 0 1 4-4z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom avatar - Elder with glasses */}
-            <div className="absolute bottom-10 left-1/2  -translate-x-1/2">
-              <div className="w-20 h-20 rounded-full bg-white p-1">
-                <div className="w-full h-full rounded-full bg-amber-700 flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-16 h-16 text-white">
-                    <path
-                      fill="currentColor"
-                      d="M12 4a4 4 0 0 1 4 4v2h.5a2.5 2.5 0 0 1 2.5 2.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 19.5v-7A2.5 2.5 0 0 1 7.5 10H8V8a4 4 0 0 1 4-4z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Bottom left avatar - Woman in black */}
-            <div className="absolute bottom-[30%] left-[10%]">
-              <div className="w-20 h-20 rounded-full bg-white p-1">
-                <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-16 h-16 text-white">
-                    <path
-                      fill="currentColor"
-                      d="M12 4a4 4 0 0 1 4 4v2h.5a2.5 2.5 0 0 1 2.5 2.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 19.5v-7A2.5 2.5 0 0 1 7.5 10H8V8a4 4 0 0 1 4-4z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Top left avatar - Person with cap */}
-            <div className="absolute top-[20%] left-[10%]">
-              <div className="w-20 h-20 rounded-full bg-white p-1">
-                <div className="w-full h-full rounded-full bg-gray-400 flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-16 h-16 text-white">
-                    <path
-                      fill="currentColor"
-                      d="M12 4a4 4 0 0 1 4 4v2h.5a2.5 2.5 0 0 1 2.5 2.5v7a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 19.5v-7A2.5 2.5 0 0 1 7.5 10H8V8a4 4 0 0 1 4-4z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="h-full justify-between bg-blue-500 flex flex-col items-center px-5 py-12 pt-48 gap-6">
+      <div className="flex flex-col gap-6">
+        <div className="text-white text-center flex flex-col gap-2 mb-12">
+          <p className="text-lg">あなたにおすすめの求人をご案内</p>
+          <h1 className="text-4xl font-bold">ハロ活タイプ診断</h1>
         </div>
-        {/* Button */}
-        <button className="w-full font-bold bg-red-500 text-white py-4 rounded-lg text-xl  ">
-          診断する
-        </button>
+
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          {/* Top avatar */}
+          <Avatar className="w-20 h-20 border-4 border-white">
+            <AvatarImage src="./1.png" alt="Avatar 1" />
+            <AvatarFallback>A1</AvatarFallback>
+          </Avatar>
+          <Avatar className="w-20 h-20 border-4 border-white">
+            <AvatarImage src="./2.png" alt="Avatar 1" />
+            <AvatarFallback>A1</AvatarFallback>
+          </Avatar>
+          <Avatar className="w-20 h-20 border-4 border-white">
+            <AvatarImage src="./3.png" alt="Avatar 1" />
+            <AvatarFallback>A1</AvatarFallback>
+          </Avatar>
+          <Avatar className="w-20 h-20 border-4 border-white">
+            <AvatarImage src="./4.png" alt="Avatar 1" />
+            <AvatarFallback>A1</AvatarFallback>
+          </Avatar>
+          <Avatar className="w-20 h-20 border-4 border-white">
+            <AvatarImage src="./5.png" alt="Avatar 1" />
+            <AvatarFallback>A1</AvatarFallback>
+          </Avatar>
+
+          <Avatar className="w-20 h-20 border-4 border-white">
+            <AvatarImage src="./6.png" alt="Avatar 1" />
+            <AvatarFallback>A1</AvatarFallback>
+          </Avatar>
+        </div>
       </div>
+
+      <Button className="w-full  bg-red-500 text-white rounded-lg py-6 text-xl font-medium hover:bg-red-600 transition-colors">
+        診断する
+      </Button>
     </div>
   );
 }
