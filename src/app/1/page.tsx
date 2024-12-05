@@ -40,7 +40,7 @@ export default function PersonalityTest() {
         </div>
       </div>
 
-      <Button className="w-full  bg-blue-500 text-white rounded-lg py-6 text-xl font-semibold hover:bg-red-600 transition-colors">
+      <Button className="w-full  bg-blue-500 text-white rounded-lg py-6 text-xl font-semibold">
         診断する
       </Button>
     </div>
